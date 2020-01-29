@@ -25,4 +25,7 @@ jobs:
             - ~/.gradle
           key: v1-dependencies-
 
-      - run: ./gradlew test
+	  - run: ./gradlew test
+	  - run: ./gradlew check
+	  - run: ./gradlew jacocoTestReport
+	  - run: bash <(curl -s https://codecov.io/bash)
