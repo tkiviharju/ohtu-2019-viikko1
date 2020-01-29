@@ -34,7 +34,7 @@ public class VarastoTest {
     @Test
     public void kuormitettuKonstruktoriToimii(){
         varasto = new Varasto(10, 10);
-        assertEquals(10.0, varasto.getSaldo(), vertailuTarkkuus);
+        assertEquals(5, varasto.getSaldo(), vertailuTarkkuus);
     }
     
     @Test
